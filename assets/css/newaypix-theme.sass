@@ -1,0 +1,62 @@
+---
+---
+
+// Import the initial variables
+@import "bulma/utilities/initial-variables"
+
+
+// Fonts
+
+$family-sans-serif: 'Ubuntu', sans-serif
+$family-monospace: 'UbuntuMono' !default
+
+// Colors
+
+$red: hsl(348, 100%, 35%)
+
+// Navigation bar
+
+$navbar-height: 4rem
+$navbar-item-img-max-height: 3rem
+
+
+
+// NewayPix Theme
+
+.is-size-0
+    font-size: 10rem !important
+
+.raimbow
+    animation: rainbow 20s ease infinite
+    animation-duration: 20s
+    animation-timing-function: ease
+    animation-delay: 0s
+    animation-direction: normal
+    animation-fill-mode: none
+    animation-iteration-count: infinite
+    animation-play-state: running
+    animation-name: rainbow
+    background-size: 10000% 10000%
+
+.home-raimbow 
+    background-image: linear-gradient(124deg, #000033, #117726, #101010)
+    
+.danger-raimbow
+    background-image: linear-gradient(124deg, #AF0011, #AA0122, #CB111F)
+
+@keyframes rainbow
+    0%
+        background-position: 0% 80%
+
+    50%
+        background-position: 100% 20%
+    
+    100%
+        background-position: 0% 80%
+    
+
+// Importing NewayPix
+@import "newaypix.sass"
+
+// Importing Bulma.
+@import "bulma.sass"

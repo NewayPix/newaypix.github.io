@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/newaypix-theme.css">
+
+    <link href="assets/img/logos/newaypix-black.png" rel="icon" type="image/x-icon">
+
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/navigation.js"></script>
+
+    <script type="text/javascript">
+      new WOW().init()
+    </script>
+  </head>
+
+  <body>
+    <section class="hero is-fullheight is-black is-welcome-cover raimbow home-raimbow">
+      <div class="hero-head">
+        <nav class="navbar is-transparent is-size-5 has-text-weight-light">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="assets/img/logos/newaypix-black.png" alt="logo">
+            </a>
+            <div class="navbar-burger burger" data-target="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+          </div>
+          <div id="nav-menu" class="navbar-menu">
+            <div class="navbar-end is-uppercase">
+              <a class="navbar-item" href="#">
+                Home
+              </a>
+              <a class="navbar-item" href="#whoweare">
+                Who we are
+              </a>
+              <a class="navbar-item " href="#projects">
+                Projects
+              </a>
+              <span class="navbar-item">
+                <a class="button is-success" disabled>
+                  <span>Blog</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <p class="title has-text-weight-light is-size-2" style="text-shadow: 2px 2px 0px black;">
+            NewayPix Entertainment
+          </p>
+          <p class="subtitle has-text-weight-light">
+            
+          </p>
+        </div>
+      </div>
+    </section>
+
+    {{ content }}
+  </body>
+</html>

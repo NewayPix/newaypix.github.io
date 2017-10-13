@@ -1,4 +1,4 @@
 newaypix.github.io
 ==================
 
-Neway Pix website.
+NewayPix official website.

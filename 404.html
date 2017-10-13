@@ -1,7 +1,30 @@
 ---
-layout: page
-title: "404"
+title: 404
 permalink: /404
 ---
-<p>There doesn't appear to be anything here. Sorry about that.</p>
-<p>If you've followed a link expecting something to be here, you can <a href="mailto:{{ site.email }}?subject=Page%20not%20found">contact me</a>.</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/newaypix-theme.css">
+</head>
+<body>
+  <section class="hero is-fullheight is-danger is-welcome-cover raimbow danger-raimbow">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <p class="title is-size-0" style="text-shadow: 3px 3px 0px black;">404</p>
+        <p class="subtitle">
+            There doesn't appear to be anything here. Sorry about the incovienence. If you think there should be something here, 
+            <a href="mailto:rcamposnunes@outlook.com" class="has-text-black-bis">tell us about it</a>.
+            
+        </p>
+        <a href="/" class="button is-large is-danger is-inverted">Go back home!</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
