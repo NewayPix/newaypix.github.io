@@ -3,9 +3,9 @@
  */
 
 section {
-    min-height: calc(100vh - 200px) !important;
+    min-height: calc(100vh - 32vh) !important;
 }
 
 footer {
-    height: 200px;
+    height: 32vh;
 }
