@@ -1,0 +1,11 @@
+/*
+ * Fix sticky bottom trick (it mess with Bulma a bit)
+ */
+
+section {
+    min-height: calc(100vh - 200px) !important;
+}
+
+footer {
+    height: 200px;
+}
