@@ -42,11 +42,11 @@
               <a class="navbar-item" href="#whoweare">
                 Who we are
               </a>
-              <a class="navbar-item " href="#projects">
+              <a class="navbar-item " href="projects">
                 Projects
               </a>
               <span class="navbar-item">
-                <a class="button is-success" disabled>
+                <a href="blog" class="button is-success">
                   <span>Blog</span>
                 </a>
               </span>
@@ -68,5 +68,7 @@
     </section>
 
     {{ content }}
+
+    {% include footer.html %}
   </body>
 </html>

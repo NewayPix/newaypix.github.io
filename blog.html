@@ -1,0 +1,42 @@
+---
+layout: blog
+title: Blog
+permalink: /blog
+---
+
+<section>
+  <h1 class="is-size-1 is-centered has-text-centered">Blog</h1>    
+
+  <div class="container is-fullhd">
+    <ul class="tile is-ancestor">
+      {% assign does_have = 'nop' %}
+      {% for post in site.posts %}
+        {% if post.category == 'blog-post' %}
+          {% assign does_have = 'has' %}
+        {% endif %}
+      {% endfor %}
+      {% if does_have == 'nop' %}
+        <li class="tile is-parent has-large-top-gap has-text-centered">
+            <h1 class="tile is-child notification is-size-1">
+              No blog posts written, yet.<br>
+              <i class="has-text-success fa fa-smile-o"></i>
+            </h1>
+        </li>
+      {% else %}
+        {% for post in site.posts %}
+          {% if post.category == 'blog-post' %}
+            <li class="tile is-parent has-small-top-gap">
+              <a class="tile is-child notification is-primary" href="{{ post.url }}">
+                <div clas="content">
+                  <p class="title">{{ post.title }}</p>
+                  <p class="content">{{ post.snippet }}</p>
+                </div>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </ul>     
+  </div>
+</section>
+
