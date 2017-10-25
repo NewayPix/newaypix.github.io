@@ -20,12 +20,19 @@
     background-image: linear-gradient(124deg, #AF0011, #AA0122, #FB111F)
     background-position: 0% 80%
 
+.raimbow-black
+    background-image: linear-gradient(124deg, #010000, #0F0A0A, #000010)
+    background-position: 0% 80%
+
 // Tiles
 
 .tile > .is-description
     text-align: center
     color: white
     cursor: default
+
+.tile > a.is-description
+    cursor: pointer
 
 .tile.raimbow-ciano,
 .tile.raimbow-green,
@@ -54,3 +61,45 @@
 
 .has-text-shadow
     text-shadow: 1px 1px 5px rgb(90, 90, 90)
+
+// New components
+
+$large-gap: 50px
+$medium-gap: 30px
+$small-gap: 10px
+
+.has-large-top-gap
+    margin-top: $large-gap
+
+.has-large-left-gap
+    margin-left: $large-gap
+
+.has-large-right-gap
+    margin-right: $large-gap
+
+.has-large-bottom-gap
+    margin-bottom: $large-gap
+
+.has-medium-top-gap
+    margin-top: $medium-gap
+
+.has-medium-left-gap
+    margin-left: $medium-gap
+
+.has-medium-right-gap
+    margin-right: $medium-gap
+
+.has-medium-bottom-gap
+    margin-bottom: $medium-gap
+
+.has-small-top-gap
+    margin-top: $small-gap
+
+.has-small-left-gap
+    margin-left: $small-gap
+
+.has-small-right-gap
+    margin-right: $small-gap
+
+.has-small-bottom-gap
+    margin-bottom: $small-gap
