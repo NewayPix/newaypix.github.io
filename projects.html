@@ -4,9 +4,7 @@ title: Projects
 permalink: /projects
 ---
 
-<section>
-  <h1 class="is-size-1 is-centered has-text-centered">Projects</h1>    
-
+<section class="ml-3 mr-3 mt-4 mb-4">
   <div class="container is-fullhd">
     <ul class="tile is-ancestor">
       {% assign does_have = 'nop' %}
@@ -17,10 +15,9 @@ permalink: /projects
       {% endfor %}
 
       {% if does_have == 'nop' %}
-        <li class="tile is-parent has-large-top-gap has-text-centered">
-          <h1 class="tile is-child is-size-1 notification">
-            No projects to see, yet.<br>
-            <i class="has-text-success fa fa-smile-o"></i>
+        <li class="tile is-parent has-large-top-gap">
+          <h1 class="tile is-child is-size-1 has-text-centered">
+            Nothing to see, move on...<br>
           </h1>
         </li>
       {% else %}
@@ -37,7 +34,7 @@ permalink: /projects
           {% endif %}
         {% endfor %}
       {% endif %}
-    </ul>     
+    </ul>
   </div>
 </section>
 
