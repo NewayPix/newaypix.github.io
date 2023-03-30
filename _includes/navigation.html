@@ -1,6 +1,6 @@
-<nav class="navbar is-size-5 has-text-weight-light">
+<nav class="navbar is-size-5 is-transparent" role="navigation" aria-label="main navigation">
 	<div class="navbar-brand">
-		<a class="navbar-item">
+		<a class="navbar-item" style="cursor:default">
 			<img src={{ "assets/img/logos/newaypix-black.png" | relative_url }} alt="logo">
 		</a>
 		<div class="navbar-burger burger" data-target="nav-menu">
@@ -10,18 +10,13 @@
 		</div>
 	</div>
 	<div id="nav-menu" class="navbar-menu">
-		<div class="navbar-end is-uppercase">
-			<a class="navbar-item" href="/">
-				Home
+		<div class="navbar-end">
+			<a href="#" class="navbar-item" disabled>
+				projects
 			</a>
-			<a class="navbar-item " href="/projects">
-				Projects
-			</a>
-			<span class="navbar-item">
-				<a href="/blog" class="button is-success">
-					<span>Blog</span>
-				</a>
-			</span>
+            <a href="#" class="navbar-item" disabled>
+                blog
+            </a>
 		</div>
 	</div>
 </nav>

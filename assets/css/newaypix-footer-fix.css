@@ -1,10 +1,10 @@
 /*
  * Fix sticky bottom trick (it mess with Bulma a bit)
- * Be careful to not include this in a page where you are using the hero 
+ * Be careful to not include this in a page where you are using the hero
  * classes.
  */
 
-section {
+main {
     min-height: calc(100vh - 32vh) !important;
 }
 

@@ -2,12 +2,15 @@
 ---
 
 // Import the initial variables
-@import "bulma/utilities/initial-variables"
+@import "sass/utilities/initial-variables"
 
-// Fonts
+// Font overrides
 
-$family-sans-serif: 'Ubuntu', sans-serif
-$family-monospace: 'UbuntuMono' !default
+$family-primary: 'Courier New', Courier, monospace
+$family-sans-serif: 'Courier New', Courier, monospace
+$family-monospace: 'Courier New', Courier, monospace
+
+$text: $black-ter
 
 // Colors
 
@@ -35,9 +38,9 @@ $navbar-item-img-max-height: 3rem
     animation-name: rainbow
     background-size: 10000% 10000%
 
-.home-raimbow 
+.home-raimbow
     background-image: linear-gradient(124deg, #000033, #117726, #101010)
-    
+
 .danger-raimbow
     background-image: linear-gradient(124deg, #AF0011, #AA0122, #CB111F)
 
@@ -47,7 +50,7 @@ $navbar-item-img-max-height: 3rem
 
     50%
         background-position: 100% 20%
-    
+
     100%
         background-position: 0% 80%
 

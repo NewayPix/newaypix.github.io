@@ -1,25 +1,27 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href={{ "assets/css/animate.min.css" | relative_url }} >
-    <link rel="stylesheet" href={{ "assets/css/newaypix-theme.css" | relative_url }}>
-    <link rel="stylesheet" href={{ "assets/css/newaypix-footer-fix.css" | relative_url }}>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href={{ "assets/css/animate.min.css" | relative_url }} >
+  <link rel="stylesheet" href={{ "assets/css/newaypix-theme.css" | relative_url }}>
+  <link rel="stylesheet" href={{ "assets/css/newaypix-footer-fix.css" | relative_url }}>
 
-    <link href={{ "assets/img/logos/newaypix-black.png" | relative_url }} rel="icon" type="image/x-icon">
+  <link href={{ "assets/img/logos/newaypix-black.png" | relative_url }} rel="icon" type="image/x-icon">
 
-    <script type="text/javascript" src={{ "assets/js/navigation.js" | relative_url }}></script>
+  <script type="text/javascript" src={{ "assets/js/navigation.js" | relative_url }}></script>
 
-    <title>NewayPix - {{ page.title }}</title>
+  <title>NewayPix - {{ page.title }}</title>
 </head>
 <body>
+  <main>
     {% include navigation.html %}
 
     {{ content }}
+  </main>
 
-    {% include footer.html %}
+  {% include footer.html %}
 </body>
 </html>
